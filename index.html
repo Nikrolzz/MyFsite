@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CG ArtStudio | Компьютерная графика</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/script.js">
+</head>
+<body>
+    <!-- Эффект интерактивного фона -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Навигация -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">CG <span>Studio</span></div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" class="active">Главная</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#portfolio">Портфолио</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+            <div class="burger" id="burgerMenu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Главный экран -->
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <h1 class="anim-fade-up">Создаем <span>Цифровые</span> Миры</h1>
+            <p class="anim-fade-up-delay">Профессиональная 3D-визуализация, концепт-арт и анимация для вашего бизнеса.</p>
+            <a href="#portfolio" class="btn anim-fade-up-delay2">Смотреть работы</a>
+        </div>
+        <div class="hero-image-container">
+            <img src="https://unsplash.com" alt="Компьютерная графика" class="hero-img">
+        </div>
+    </section>
+
+    <!-- Секция Услуг -->
+    <section id="services" class="services-section">
+        <h2 class="section-title">Наши Направления</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="card-icon">⚡</div>
+                <h3>3D Моделирование</h3>
+                <p>Создание высокополигональных и Low-Poly моделей для игр и презентаций.</p>
+            </div>
+            <div class="service-card">
+                <div class="card-icon">🎨</div>
+                <h3>Концепт-Арт</h3>
+                <p>Разработка уникальных персонажей, окружения и ключевых кадров для проектов.</p>
+            </div>
+            <div class="service-card">
+                <div class="card-icon">🎬</div>
+                <h3>Motion Design</h3>
+                <p>Оживление графики, создание промо-роликов и кинетической типографики.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Портфолио -->
+    <section id="portfolio" class="portfolio-section">
+        <h2 class="section-title">Галерея Работ</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="https://unsplash.com" alt="Работа 1">
+                <div class="portfolio-overlay">
+                    <h4>Cyberpunk City</h4>
+                    <p>3D Окружение</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://unsplash.com" alt="Работа 2">
+                <div class="portfolio-overlay">
+                    <h4>Neon Character</h4>
+                    <p>Концепт-арт</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://unsplash.com" alt="Работа 3">
+                <div class="portfolio-overlay">
+                    <h4>Abstract Motion</h4>
+                    <p>Рендеринг</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contact" class="contact-section">
+        <h2 class="section-title">Обсудить проект</h2>
+        <form class="contact-form" id="contactForm">
+            <input type="text" placeholder="Ваше имя" required>
+            <input type="email" placeholder="Ваш Email" required>
+            <textarea placeholder="Опишите вашу задачу" rows="5" required></textarea>
+            <button type="submit" class="btn">Отправить заявку</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 CG ArtStudio. Все права защищены.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
